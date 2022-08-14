@@ -30,7 +30,7 @@ div.logo {
 h2.h2 {
     position: absolute;
     bottom: 50px;
-    left: 807px;
+    left: 800px;
 }
 
 nav.nav {
@@ -121,6 +121,7 @@ div.numero {
 }
 
 div.bref {
+    font-family: "font-1" , serif;
     grid-area: tx;
     width: 80%;
 
@@ -128,6 +129,26 @@ div.bref {
 
 div.button1 {
     grid-area: bt;
+    place-self: center stretch;
+
+}
+
+#BT {
+    padding: 5px;
+    font-size: 2rem;
+    color: azure;
+    cursor: pointer;
+    background-color: #0c213a;
+    border-radius: 4px;
+    box-shadow: 0 2px 12px 5px rgba(0, -0, -0, 253);
+
+}
+
+#BT:hover {
+    border-color: #225ca3;
+    background-color: #225ca3;
+    transition: 0.5s;
+    box-shadow: none;
 
 }
 
@@ -151,8 +172,15 @@ div.button1 {
     box-shadow: none;
 }
 
-#BT {
-    cursor: pointer;
+#RGE {
+    position: absolute;
+    bottom: 320px;
+    left: 150px;
+}
+
+#CIP {
+    position: absolute;
+    bottom: 320px;
 }
 
 section.Acceuil {
@@ -160,9 +188,22 @@ section.Acceuil {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: 
-    ". nu ."
-    "tx . ."
-    "bt . .";
+    "im nu ."
+    "tx i2 t2"
+    "sy bt sx";
 
 
+}
+
+div.Prestation {
+    grid-area: t2;
+    font-family: "font-1" , serif;
+    width: 80%;
+}
+
+div.sdb {
+    grid-area: i2;
+    place-items: center;
+    box-shadow: 0 2px 12px 5px rgba(0, -0, -0, 253);
+    
 }
